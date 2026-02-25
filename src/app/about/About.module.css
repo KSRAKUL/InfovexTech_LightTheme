@@ -1,0 +1,238 @@
+.page {
+    padding: 7rem 0 4rem;
+    background: transparent;
+}
+
+.header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    backdrop-filter: blur(10px);
+}
+
+.title {
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: white;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.valueGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.valueCard {
+    padding: 2rem 1.75rem;
+    background: var(--glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+    transition: all 0.3s ease;
+    box-shadow: var(--glass-shadow);
+}
+
+.valueCard:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow: 0 12px 30px -8px rgba(99, 102, 241, 0.25);
+}
+
+.iconBox {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--accent);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.25rem;
+}
+
+.valueTitle {
+    font-size: 1.15rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.valueDesc {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.partnership {
+    background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), #03050C);
+    color: white;
+    padding: 3.5rem 3rem;
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.partnerFlex {
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.partnerContent {
+    flex: 1.5;
+}
+
+.smallBadge {
+    display: inline-block;
+    color: var(--accent);
+    font-weight: 800;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 1rem;
+}
+
+.partnerTitle {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: white;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+}
+
+.partnerText {
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.benefitList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.benefitList li {
+    display: flex;
+    gap: 1rem;
+}
+
+.benefitList svg {
+    color: var(--accent);
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    margin-top: 2px;
+}
+
+.benefitList strong {
+    display: block;
+    font-size: 1rem;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 0.2rem;
+    color: white;
+}
+
+.benefitList p {
+    opacity: 0.6;
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+.statBox {
+    flex: 1;
+}
+
+.bigStat {
+    background: var(--glass);
+    backdrop-filter: blur(24px);
+    border: 1px solid var(--glass-border);
+    padding: 3rem 2.5rem;
+    border-radius: var(--radius-xl);
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.number {
+    font-size: 4rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.04em;
+}
+
+.statLabel {
+    font-size: 1.25rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+.statDesc {
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+    .partnerFlex {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .valueGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .partnership {
+        padding: 2.5rem 1.75rem;
+    }
+
+    .number {
+        font-size: 3rem;
+    }
+
+    .valueGrid {
+        grid-template-columns: 1fr;
+    }
+}

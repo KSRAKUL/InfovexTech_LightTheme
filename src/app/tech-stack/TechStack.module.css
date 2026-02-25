@@ -1,0 +1,124 @@
+.page {
+    padding: 10rem 0;
+    background: transparent;
+}
+
+.header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 6rem;
+}
+
+.topBadge {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    backdrop-filter: blur(10px);
+}
+
+.title {
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: white;
+    letter-spacing: -0.04em;
+    line-height: 1;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.sectionIcon {
+    width: 64px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--accent);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.75rem;
+}
+
+.sectionTitle {
+    font-size: 2.25rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -0.02em;
+}
+
+.sectionSubtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.card {
+    padding: 3.5rem;
+    background: var(--glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: var(--glass-shadow);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 20px 50px -10px rgba(99, 102, 241, 0.3);
+}
+
+.techName {
+    font-size: 1.5rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.techDesc {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .sectionHeader {
+        flex-direction: column;
+        text-align: center;
+    }
+}

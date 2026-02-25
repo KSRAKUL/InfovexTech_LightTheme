@@ -1,0 +1,120 @@
+.section {
+    position: relative;
+    padding: 2.5rem 0;
+    overflow: hidden;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.fadeLeft,
+.fadeRight {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.fadeLeft {
+    left: 0;
+    background: linear-gradient(to right, var(--background), transparent);
+}
+
+.fadeRight {
+    right: 0;
+    background: linear-gradient(to left, var(--background), transparent);
+}
+
+.track {
+    overflow: hidden;
+    width: 100%;
+}
+
+.marquee {
+    display: flex;
+    gap: 3rem;
+    width: max-content;
+    animation: marquee-scroll 40s linear infinite reverse;
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--radius-full);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.item:hover {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: rgba(99, 102, 241, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.15);
+}
+
+.icon {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+}
+
+.item:hover .name {
+    color: var(--text);
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 1.5rem 0;
+    }
+
+    .marquee {
+        gap: 1.5rem;
+        animation-duration: 20s;
+    }
+
+    .item {
+        padding: 0.5rem 1rem;
+    }
+
+    .fadeLeft,
+    .fadeRight {
+        width: 60px;
+    }
+}

@@ -1,0 +1,220 @@
+.footer {
+    position: relative;
+    padding: 0;
+    background: #0d0d1a;
+    color: #E2E8F0;
+    border-top: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+.gradientLine {
+    height: 3px;
+    background: linear-gradient(90deg, transparent 5%, #6366F1 30%, #22C55E 70%, transparent 95%);
+    opacity: 0.6;
+}
+
+.container {
+    position: relative;
+    padding: 3.5rem 0 0;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
+    gap: 2rem;
+    padding-bottom: 2.5rem;
+    align-items: flex-start;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 1.5rem;
+}
+
+.logoWrapper {
+    display: inline-flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logoImg {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(1.2);
+}
+
+.logoText {
+    display: flex;
+    flex-direction: column;
+}
+
+.brandName {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: white;
+}
+
+.brandTag {
+    font-size: 0.55rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.tagline {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.7;
+}
+
+.socials {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.socialIcon {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.45);
+    transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+    background: rgba(99, 102, 241, 0.15);
+    border-color: rgba(99, 102, 241, 0.3);
+    color: #818CF8;
+    transform: translateY(-2px);
+}
+
+/* Link Columns */
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.colTitle {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.4rem;
+    color: white;
+}
+
+.footerLink {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.45);
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.footerLink:hover {
+    color: #818CF8;
+    transform: translateX(3px);
+}
+
+/* Contact Items */
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.45);
+    transition: color 0.2s ease;
+}
+
+a.contactItem:hover {
+    color: #818CF8;
+}
+
+.contactItem svg {
+    flex-shrink: 0;
+    opacity: 0.5;
+}
+
+/* Bottom Bar */
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.legal {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.legal a {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.3);
+    transition: color 0.2s ease;
+}
+
+.legal a:hover {
+    color: #818CF8;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .top {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+
+    .brand {
+        grid-column: 1 / -1;
+        padding-right: 0;
+    }
+
+    .tagline {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .legal {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .top {
+        grid-template-columns: 1fr;
+    }
+}

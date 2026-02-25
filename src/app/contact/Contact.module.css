@@ -1,0 +1,245 @@
+.page {
+    padding: 7rem 0 4rem;
+    background: transparent;
+}
+
+.header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3.5rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    backdrop-filter: blur(10px);
+}
+
+.title {
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: white;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.formCard {
+    background: var(--glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 2.5rem;
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.inputGroup label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    padding: 0.85rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.1);
+}
+
+.submitBtn {
+    margin-top: 0.5rem;
+    padding: 0.9rem;
+    background: var(--gradient);
+    color: white;
+    font-weight: 700;
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.85rem;
+}
+
+.submitBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(99, 102, 241, 0.45);
+}
+
+.infoCol {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.brandCard {
+    background: radial-gradient(circle at top right, var(--accent), var(--accent-alt));
+    color: white;
+    padding: 2rem 1.75rem;
+    border-radius: var(--radius-xl);
+    box-shadow: 0 16px 32px rgba(99, 102, 241, 0.25);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logoImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 1.25rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+}
+
+.tagline {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 700;
+    font-size: 0.82rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.desc {
+    opacity: 0.85;
+    line-height: 1.7;
+    font-size: 0.9rem;
+}
+
+.contactList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    transition: all 0.3s ease;
+}
+
+.contactItem:hover {
+    border-color: var(--accent);
+    transform: translateX(4px);
+}
+
+.iconBox {
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--accent);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.label {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.2rem;
+}
+
+.value {
+    font-weight: 700;
+    color: white;
+    font-size: 0.95rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .formCard {
+        padding: 2rem 1.5rem;
+    }
+
+    .brandCard {
+        padding: 1.5rem;
+    }
+}

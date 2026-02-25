@@ -1,0 +1,355 @@
+.page {
+    padding-top: 5rem;
+    background: transparent;
+}
+
+.header {
+    padding: 10rem 0 6rem;
+    text-align: center;
+    background: transparent;
+}
+
+.title {
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: white;
+    letter-spacing: -0.04em;
+    line-height: 1;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 6rem;
+}
+
+.mainCard {
+    background: var(--glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 4rem;
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mainCard:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 20px 50px -10px rgba(99, 102, 241, 0.3);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.iconBox {
+    width: 64px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--accent);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.5rem;
+}
+
+.cardTitle {
+    font-size: 2rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.cardDesc {
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.itemList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.itemList li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.itemList svg {
+    color: var(--accent);
+}
+
+.automation {
+    padding: 12rem 0;
+    margin-top: 8rem;
+    background: transparent;
+    position: relative;
+}
+
+.automationBox {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+.autoContent {
+    flex: 1;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent);
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    backdrop-filter: blur(10px);
+}
+
+.autoTitle {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: white;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+}
+
+.autoText {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.autoList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.autoList li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.autoList svg {
+    color: var(--accent);
+}
+
+.mockup {
+    flex: 1;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+    padding: 3rem;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+}
+
+.mockHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #00C9A7;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #00C9A7;
+    animation: pulseDot 2s infinite;
+}
+
+@keyframes pulseDot {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.status {
+    margin-left: auto;
+    padding: 0.4rem 1rem;
+    background: rgba(0, 201, 167, 0.1);
+    color: #00C9A7;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: 1px solid rgba(0, 201, 167, 0.2);
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stat span {
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.stat strong {
+    color: #00C9A7;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 1024px) {
+    .automationBox {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .cardGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .challengeGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .autoTitle {
+        font-size: 2.5rem;
+    }
+
+    .itemList {
+        grid-template-columns: 1fr;
+    }
+
+    .cardGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .challengeGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .mainCard {
+        padding: 2rem;
+    }
+}
+
+/* Challenges Section */
+.challenges {
+    padding: 8rem 0;
+}
+
+.challengeTitle {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.challengeSubtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.challengeGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.challengeCard {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.challengeCard:hover {
+    transform: translateY(-4px);
+    border-color: rgba(99, 102, 241, 0.2);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.challengeIcon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: var(--radius-md);
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+}
+
+.challengeCard h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.challengeCard p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
