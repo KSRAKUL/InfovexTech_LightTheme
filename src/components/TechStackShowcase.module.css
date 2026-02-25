@@ -76,7 +76,7 @@
 
 .categoryCard:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
 }
 
 .categoryHeader {
@@ -110,8 +110,8 @@
     align-items: center;
     gap: 0.4rem;
     padding: 0.4rem 0.9rem;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: var(--radius-full);
     font-size: 0.82rem;
     transition: all 0.3s ease;

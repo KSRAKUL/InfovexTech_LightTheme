@@ -28,7 +28,7 @@
     font-family: 'Outfit', sans-serif;
     font-weight: 800;
     margin-bottom: 1rem;
-    color: white;
+    color: var(--primary);
     letter-spacing: -0.03em;
     line-height: 1.1;
 }
@@ -61,7 +61,7 @@
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: white;
+    color: var(--primary);
 }
 
 .form {
@@ -85,12 +85,12 @@
 .inputGroup input,
 .inputGroup textarea {
     padding: 0.85rem 1rem;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: var(--radius-md);
     font-family: inherit;
     font-size: 0.9rem;
-    color: white;
+    color: var(--text);
     transition: all 0.3s ease;
 }
 
@@ -98,7 +98,7 @@
 .inputGroup textarea:focus {
     outline: none;
     border-color: var(--accent);
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.03);
     box-shadow: 0 0 15px rgba(99, 102, 241, 0.1);
 }
 
@@ -201,13 +201,13 @@
 .iconBox {
     width: 42px;
     height: 42px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(99, 102, 241, 0.06);
     color: var(--accent);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.12);
     font-size: 1.1rem;
     flex-shrink: 0;
 }
@@ -223,7 +223,7 @@
 
 .value {
     font-weight: 700;
-    color: white;
+    color: var(--primary);
     font-size: 0.95rem;
     font-family: 'Outfit', sans-serif;
 }

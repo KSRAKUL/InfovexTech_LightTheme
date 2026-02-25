@@ -15,12 +15,12 @@
 }
 
 .scrolled {
-    padding: 1.25rem 0;
-    background: var(--glass);
+    padding: 1rem 0;
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--glass-border);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .container {
@@ -45,7 +45,7 @@
     width: 80px;
     height: 80px;
     object-fit: contain;
-    filter: drop-shadow(0 0 12px rgba(108, 99, 255, 0.23));
+    filter: drop-shadow(0 0 12px rgba(99, 102, 241, 0.15));
 }
 
 .logoText {
@@ -102,6 +102,7 @@
 
 .link:hover {
     opacity: 1;
+    color: var(--primary);
 }
 
 .activeLink {
@@ -119,7 +120,6 @@
     height: 2px;
     background: var(--accent);
     border-radius: 1px;
-    box-shadow: 0 0 8px var(--accent-glow);
 }
 
 .cta {
@@ -128,7 +128,7 @@
     color: white;
     font-weight: 700;
     border-radius: var(--radius-md);
-    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.25);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-transform: uppercase;
     font-size: 0.75rem;
@@ -137,8 +137,8 @@
 
 .cta:hover {
     transform: translateY(-2px);
-    box-shadow: 0 15px 30px -5px rgba(99, 102, 241, 0.5);
-    filter: brightness(1.1);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.35);
+    filter: brightness(1.05);
 }
 
 .mobileToggle {
@@ -152,7 +152,7 @@
     right: -100%;
     width: 80%;
     height: 100vh;
-    background: var(--surface);
+    background: white;
     z-index: 1001;
     display: flex;
     flex-direction: column;
