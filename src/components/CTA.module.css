@@ -86,15 +86,15 @@
 .primaryBtn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.9rem 2rem;
-    background: var(--gradient-green);
+    gap: 0.6rem;
+    padding: 1rem 2.5rem;
+    background: var(--gradient-tri);
     color: white;
     border-radius: var(--radius-full);
-    font-weight: 600;
-    font-size: 0.95rem;
+    font-weight: 700;
+    font-size: 1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px var(--accent-green-glow);
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
 }
 
 .primaryBtn:hover {

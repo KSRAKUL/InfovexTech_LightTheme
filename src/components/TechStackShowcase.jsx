@@ -1,6 +1,14 @@
 "use client"
 import ScrollReveal from './ScrollReveal'
 import styles from './TechStackShowcase.module.css'
+import {
+    SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiFlutter, SiFramer,
+    SiNodedotjs, SiPython, SiExpress, SiGraphql,
+    SiPostgresql, SiMongodb, SiRedis, SiFirebase, SiSupabase,
+    SiDocker, SiAmazon, SiKubernetes, SiGithubactions, SiVercel,
+    SiFigma, SiAdobexd, SiAdobephotoshop, SiAdobeillustrator, SiBlender,
+} from 'react-icons/si'
+import { Link2 } from 'lucide-react'
 
 const TechStackShowcase = () => {
     const categories = [
@@ -8,56 +16,56 @@ const TechStackShowcase = () => {
             name: 'Frontend',
             color: '#6366F1',
             techs: [
-                { name: 'React', icon: '⚛️' },
-                { name: 'Next.js', icon: '▲' },
-                { name: 'TypeScript', icon: '🔷' },
-                { name: 'Tailwind CSS', icon: '💨' },
-                { name: 'Flutter', icon: '🦋' },
-                { name: 'Framer Motion', icon: '🎬' },
+                { name: 'React', icon: <SiReact color="#61DAFB" /> },
+                { name: 'Next.js', icon: <SiNextdotjs color="#000000" /> },
+                { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
+                { name: 'Tailwind CSS', icon: <SiTailwindcss color="#06B6D4" /> },
+                { name: 'Flutter', icon: <SiFlutter color="#02569B" /> },
+                { name: 'Framer Motion', icon: <SiFramer color="#0055FF" /> },
             ],
         },
         {
             name: 'Backend',
             color: '#A855F7',
             techs: [
-                { name: 'Node.js', icon: '🟢' },
-                { name: 'Python', icon: '🐍' },
-                { name: 'Express', icon: '⚡' },
-                { name: 'GraphQL', icon: '◈' },
-                { name: 'REST APIs', icon: '🔗' },
+                { name: 'Node.js', icon: <SiNodedotjs color="#339933" /> },
+                { name: 'Python', icon: <SiPython color="#3776AB" /> },
+                { name: 'Express', icon: <SiExpress color="#000000" /> },
+                { name: 'GraphQL', icon: <SiGraphql color="#E10098" /> },
+                { name: 'REST APIs', icon: <Link2 size={16} color="#6366F1" /> },
             ],
         },
         {
             name: 'Database',
             color: '#06B6D4',
             techs: [
-                { name: 'PostgreSQL', icon: '🐘' },
-                { name: 'MongoDB', icon: '🍃' },
-                { name: 'Redis', icon: '🔴' },
-                { name: 'Firebase', icon: '🔥' },
-                { name: 'Supabase', icon: '⚡' },
+                { name: 'PostgreSQL', icon: <SiPostgresql color="#4169E1" /> },
+                { name: 'MongoDB', icon: <SiMongodb color="#47A248" /> },
+                { name: 'Redis', icon: <SiRedis color="#DC382D" /> },
+                { name: 'Firebase', icon: <SiFirebase color="#FFCA28" /> },
+                { name: 'Supabase', icon: <SiSupabase color="#3ECF8E" /> },
             ],
         },
         {
             name: 'DevOps',
             color: '#F59E0B',
             techs: [
-                { name: 'Docker', icon: '🐳' },
-                { name: 'AWS', icon: '☁️' },
-                { name: 'Kubernetes', icon: '⎈' },
-                { name: 'CI/CD', icon: '🔄' },
-                { name: 'Vercel', icon: '▼' },
+                { name: 'Docker', icon: <SiDocker color="#2496ED" /> },
+                { name: 'AWS', icon: <SiAmazon color="#FF9900" /> },
+                { name: 'Kubernetes', icon: <SiKubernetes color="#326CE5" /> },
+                { name: 'CI/CD', icon: <SiGithubactions color="#2088FF" /> },
+                { name: 'Vercel', icon: <SiVercel color="#000000" /> },
             ],
         },
         {
             name: 'Design',
             color: '#EC4899',
             techs: [
-                { name: 'Figma', icon: '🎨' },
-                { name: 'Adobe XD', icon: '✏️' },
-                { name: 'Photoshop', icon: '🖼️' },
-                { name: 'Illustrator', icon: '🖌️' },
-                { name: 'Blender', icon: '🧊' },
+                { name: 'Figma', icon: <SiFigma color="#F24E1E" /> },
+                { name: 'Adobe XD', icon: <SiAdobexd color="#FF61F6" /> },
+                { name: 'Photoshop', icon: <SiAdobephotoshop color="#31A8FF" /> },
+                { name: 'Illustrator', icon: <SiAdobeillustrator color="#FF9A00" /> },
+                { name: 'Blender', icon: <SiBlender color="#F5792A" /> },
             ],
         },
     ]

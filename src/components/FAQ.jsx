@@ -27,7 +27,7 @@ const FAQ = () => {
         },
         {
             question: 'What is your pricing model?',
-            answer: 'We offer both project-based and retainer pricing. Project-based pricing gives you a fixed cost for defined deliverables, while retainer models work well for ongoing development needs. Check our pricing section for detailed plans.',
+            answer: 'We offer both project-based and retainer pricing. Project-based pricing gives you a fixed cost for defined deliverables, while retainer models work well for ongoing development needs. Contact us to discuss a plan tailored to your requirements.',
         },
         {
             question: 'How do you handle communication during a project?',

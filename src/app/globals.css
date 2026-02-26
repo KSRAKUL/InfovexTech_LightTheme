@@ -215,10 +215,20 @@ section {
 
 @media (max-width: 768px) {
   section {
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
 
   .container {
     padding: 0 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 3rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
   }
 }

@@ -90,7 +90,7 @@ const Footer = () => {
                         <Link href="/about" className={styles.footerLink}>About Us</Link>
                         <Link href="/services" className={styles.footerLink}>Services</Link>
                         <Link href="/tech-stack" className={styles.footerLink}>Tech Stack</Link>
-                        <Link href="/pricing" className={styles.footerLink}>Pricing</Link>
+                        <Link href="/contact" className={styles.footerLink}>Contact</Link>
                     </div>
 
                     {/* Services Column */}

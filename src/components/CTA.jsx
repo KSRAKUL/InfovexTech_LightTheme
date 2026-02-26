@@ -26,11 +26,8 @@ const CTA = () => {
                             </p>
                             <div className={styles.actions}>
                                 <Link href="/contact" className={styles.primaryBtn}>
-                                    <span>Start Your Project</span>
+                                    <span>Contact Us</span>
                                     <span className={styles.arrow}>→</span>
-                                </Link>
-                                <Link href="/pricing" className={styles.secondaryBtn}>
-                                    View Pricing
                                 </Link>
                             </div>
                         </div>
