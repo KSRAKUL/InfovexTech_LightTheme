@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { motion } from 'framer-motion'
 import styles from './Navbar.module.css'
@@ -9,22 +9,11 @@ import styles from './Navbar.module.css'
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false)
-    const [hidden, setHidden] = useState(false)
-    const lastScrollY = useRef(0)
     const pathname = usePathname()
 
     useEffect(() => {
         const handleScroll = () => {
-            const currentY = window.scrollY
-            setScrolled(currentY > 50)
-
-            // Hide on scroll down, show on scroll up
-            if (currentY > lastScrollY.current && currentY > 100) {
-                setHidden(true)
-            } else {
-                setHidden(false)
-            }
-            lastScrollY.current = currentY
+            setScrolled(window.scrollY > 50)
         }
         window.addEventListener('scroll', handleScroll, { passive: true })
         return () => window.removeEventListener('scroll', handleScroll)
@@ -44,7 +33,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''} ${hidden ? styles.hidden : ''}`}>
+        <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
             <div className={`${styles.container} container`}>
                 <motion.div
                     className={styles.logoWrapper}
