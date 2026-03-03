@@ -235,11 +235,41 @@
 }
 
 @media (max-width: 768px) {
+    .page {
+        padding: 5rem 0 3rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
     .formCard {
         padding: 2rem 1.5rem;
     }
 
     .brandCard {
         padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page {
+        padding: 4rem 0 2rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .formCard {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .brandCard {
+        padding: 1.25rem;
     }
 }

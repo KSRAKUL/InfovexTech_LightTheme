@@ -2,23 +2,10 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin } from 'lucide-react'
-import {
-    SiGithub,
-    SiLinkedin,
-    SiInstagram,
-} from 'react-icons/si'
-import { FaXTwitter } from 'react-icons/fa6'
 import styles from './Footer.module.css'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear()
-
-    const socials = [
-        { name: 'GitHub', icon: <SiGithub size={16} />, url: '#' },
-        { name: 'LinkedIn', icon: <SiLinkedin size={16} />, url: '#' },
-        { name: 'Twitter', icon: <FaXTwitter size={16} />, url: '#' },
-        { name: 'Instagram', icon: <SiInstagram size={16} />, url: '#' },
-    ]
 
     return (
         <footer className={styles.footer}>
@@ -34,22 +21,10 @@ const Footer = () => {
                             initial="initial"
                         >
                             <Link href="/" className={styles.logo}>
-                                <motion.img
+                                <img
                                     src="/logo.png"
                                     alt="Infovex Logo"
                                     className={styles.logoImg}
-                                    variants={{
-                                        initial: { rotate: 0 },
-                                        hover: { scale: 1.1, rotate: 10 }
-                                    }}
-                                    animate={{
-                                        rotate: 360,
-                                        scale: [1, 1.05, 1]
-                                    }}
-                                    transition={{
-                                        rotate: { duration: 30, repeat: Infinity, ease: "linear" },
-                                        scale: { duration: 5, repeat: Infinity, ease: "easeInOut" }
-                                    }}
                                 />
                                 <div className={styles.logoText}>
                                     <motion.span
@@ -68,20 +43,6 @@ const Footer = () => {
                             Information. Intelligence. Accuracy. We build exceptional digital
                             experiences that drive business growth and deliver measurable results.
                         </p>
-                        <div className={styles.socials}>
-                            {socials.map((social) => (
-                                <a
-                                    key={social.name}
-                                    href={social.url}
-                                    className={styles.socialIcon}
-                                    title={social.name}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    {social.icon}
-                                </a>
-                            ))}
-                        </div>
                     </div>
 
                     {/* Company Column */}

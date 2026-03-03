@@ -1,0 +1,100 @@
+.page {
+    padding: 7rem 0 4rem;
+    background: transparent;
+}
+
+.page section {
+    padding: 0;
+}
+
+.title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+}
+
+.updated {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.section {
+    margin-bottom: 1.25rem;
+}
+
+.section h2 {
+    font-size: 1.05rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.35rem;
+}
+
+.section p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 0.4rem;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.4rem 0;
+}
+
+.section ul li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.section ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.section a {
+    color: var(--accent);
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+.section a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding: 5rem 0 3rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .section h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page {
+        padding: 4rem 0 2rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}

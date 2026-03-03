@@ -249,43 +249,6 @@
     font-size: 1.25rem;
 }
 
-@media (max-width: 1024px) {
-    .automationBox {
-        flex-direction: column;
-        gap: 5rem;
-    }
-
-    .cardGrid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .challengeGrid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .autoTitle {
-        font-size: 2.5rem;
-    }
-
-    .itemList {
-        grid-template-columns: 1fr;
-    }
-
-    .cardGrid {
-        grid-template-columns: 1fr;
-    }
-
-    .challengeGrid {
-        grid-template-columns: 1fr;
-    }
-
-    .mainCard {
-        padding: 2rem;
-    }
-}
-
 /* Challenges Section */
 .challenges {
     padding: 4rem 0;
@@ -353,4 +316,141 @@
     font-size: 0.9rem;
     color: var(--text-muted);
     line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+    .automationBox {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .cardGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .challengeGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding-top: 3rem;
+    }
+
+    .header {
+        padding: 5rem 0 2rem;
+    }
+
+    .title {
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+        margin-bottom: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .autoTitle {
+        font-size: 1.75rem;
+    }
+
+    .autoText {
+        font-size: 0.9rem;
+    }
+
+    .itemList {
+        grid-template-columns: 1fr;
+    }
+
+    .cardGrid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .mainCard {
+        padding: 1.75rem;
+    }
+
+    .cardTitle {
+        font-size: 1.2rem;
+    }
+
+    .cardDesc {
+        font-size: 0.88rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cardHeader {
+        gap: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .iconBox {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+
+    .challengeGrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .challengeCard {
+        padding: 1.5rem;
+    }
+
+    .challengeTitle {
+        font-size: 1.4rem;
+    }
+
+    .challengeSubtitle {
+        font-size: 0.88rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 4rem 0 1.5rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 0.88rem;
+        line-height: 1.6;
+    }
+
+    .mainCard {
+        padding: 1.5rem;
+    }
+
+    .cardTitle {
+        font-size: 1.1rem;
+    }
+
+    .cardDesc {
+        font-size: 0.82rem;
+    }
+
+    .challengeGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .challengeCard {
+        padding: 1.25rem;
+    }
+
+    .autoTitle {
+        font-size: 1.4rem;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+        padding: 0.4rem 1rem;
+    }
 }

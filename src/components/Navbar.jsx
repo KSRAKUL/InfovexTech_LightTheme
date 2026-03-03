@@ -41,23 +41,10 @@ const Navbar = () => {
                     initial="initial"
                 >
                     <Link href="/" className={styles.logo}>
-                        <motion.img
+                        <img
                             src="/logo.png"
                             alt="Infovex Logo"
                             className={styles.logoImg}
-                            variants={{
-                                initial: { rotate: 0, y: 0 },
-                                hover: { scale: 1.1, rotate: 15 }
-                            }}
-                            animate={{
-                                rotate: 360,
-                                y: [0, -5, 0]
-                            }}
-                            transition={{
-                                rotate: { duration: 20, repeat: Infinity, ease: "linear" },
-                                y: { duration: 4, repeat: Infinity, ease: "easeInOut" },
-                                scale: { type: "spring", stiffness: 300 }
-                            }}
                         />
                         <div className={styles.logoText}>
                             <motion.span
