@@ -8,8 +8,8 @@ import { ArrowRight } from 'lucide-react'
 const stats = [
     { number: '50+', label: 'Projects Delivered' },
     { number: '30+', label: 'Happy Clients' },
-    { number: '99%', label: 'Uptime Guaranteed' },
-    { number: '5.0', label: 'Client Rating' },
+    { number: '100%', label: 'Uptime Guaranteed' },
+    { number: '4.8', label: 'Client Rating' },
 ]
 
 /* ── Tech nodes for the neural network ── */
@@ -169,7 +169,7 @@ const Hero = () => {
                         transition={{ delay: 0.5 }}
                     >
                         <span className={styles.badgeDot} />
-                        Information. Intelligence. Accuracy.
+                        Innovation. Intelligence. Integrity.
                     </motion.div>
 
                     <h1 className={styles.title}>

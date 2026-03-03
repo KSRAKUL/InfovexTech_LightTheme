@@ -40,7 +40,7 @@ const Footer = () => {
                             </Link>
                         </motion.div>
                         <p className={styles.tagline}>
-                            Information. Intelligence. Accuracy. We build exceptional digital
+                            Innovation. Intelligence. Integrity. We build exceptional digital
                             experiences that drive business growth and deliver measurable results.
                         </p>
                     </div>

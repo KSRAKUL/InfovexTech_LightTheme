@@ -52,7 +52,7 @@ export default function ContactPage() {
                                     <Image src="/logo.png" alt="Infovex Technologies" width={40} height={40} className={styles.logoImg} />
                                     <h3>Infovex Technologies</h3>
                                 </div>
-                                <p className={styles.tagline}>Information. Intelligence. Accuracy.</p>
+                                <p className={styles.tagline}>Innovation. Intelligence. Integrity.</p>
                                 <p className={styles.desc}>Building exceptional digital experiences that drive business growth.</p>
                             </div>
                         </ScrollReveal>

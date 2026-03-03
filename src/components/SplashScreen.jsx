@@ -38,7 +38,7 @@ const SplashScreen = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.5, duration: 0.5 }}
                         >
-                            Information. Intelligence. Accuracy.
+                            Innovation. Intelligence. Integrity.
                         </motion.p>
                     </div>
 
