@@ -81,7 +81,11 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu Overlay */}
+            {isOpen && <div className={styles.overlay} onClick={() => setIsOpen(false)} />}
             <div className={`${styles.mobileMenu} ${isOpen ? styles.active : ''}`}>
+                <button className={styles.closeBtn} onClick={() => setIsOpen(false)}>
+                    <X size={24} />
+                </button>
                 {navLinks.map((link) => (
                     <Link
                         key={link.name}

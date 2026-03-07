@@ -1,7 +1,7 @@
 "use client"
 import ScrollReveal from '@/components/ScrollReveal'
 import styles from './About.module.css'
-import { Shield, Target, Users, Award, Lightbulb, HeartHandshake, CheckCircle2 } from 'lucide-react'
+import { Shield, Target, Users, Award, Lightbulb, HeartHandshake, CheckCircle2, Rocket, Eye } from 'lucide-react'
 
 export default function AboutPage() {
     const values = [
@@ -68,6 +68,37 @@ export default function AboutPage() {
                 </div>
             </section>
 
+            <section className={styles.missionVision}>
+                <div className="container">
+                    <div className={styles.mvGrid}>
+                        <ScrollReveal>
+                            <div className={styles.mvCard}>
+                                <div className={styles.mvIcon}><Rocket size={40} /></div>
+                                <h2 className={styles.mvTitle}>Our Mission</h2>
+                                <p className={styles.mvText}>
+                                    To empower businesses with intelligent, high-performance digital solutions
+                                    that drive growth, streamline operations, and set new benchmarks in
+                                    technological excellence through innovation and dedication.
+                                </p>
+                            </div>
+                        </ScrollReveal>
+
+                        <ScrollReveal delay={0.2}>
+                            <div className={styles.mvCard}>
+                                <div className={styles.mvIcon}><Eye size={40} /></div>
+                                <h2 className={styles.mvTitle}>Our Vision</h2>
+                                <p className={styles.mvText}>
+                                    To be the global leader in digital transformation, recognized for
+                                    creating a future where technology and human ingenuity merge
+                                    seamlessly to solve the world's most complex business challenges.
+                                </p>
+                            </div>
+                        </ScrollReveal>
+                    </div>
+                </div>
+            </section>
+
+
             <section className={styles.partnership}>
                 <div className="container">
                     <div className={styles.partnerFlex}>
@@ -77,7 +108,7 @@ export default function AboutPage() {
                                 <h2 className={styles.partnerTitle}>Partnerships Built on Excellence</h2>
                                 <p className={styles.partnerText}>
                                     Organizations choose Infovex Technologies because we deliver
-                                    more than just code — we deliver reliability, expertise, and
+                                    more than just code, we deliver reliability, expertise, and
                                     genuine care for your business outcomes.
                                 </p>
                                 <ul className={styles.benefitList}>

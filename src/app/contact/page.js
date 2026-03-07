@@ -49,7 +49,7 @@ export default function ContactPage() {
                         <ScrollReveal direction="right">
                             <div className={styles.brandCard}>
                                 <div className={styles.logo}>
-                                    <Image src="/logo.png" alt="Infovex Technologies" width={40} height={40} className={styles.logoImg} />
+                                    <Image src="/logo.png" alt="Infovex Technologies" width={70} height={70} className={styles.logoImg} />
                                     <h3>Infovex Technologies</h3>
                                 </div>
                                 <p className={styles.tagline}>Innovation. Intelligence. Integrity.</p>

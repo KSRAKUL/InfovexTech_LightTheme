@@ -1,5 +1,5 @@
 .page {
-    padding: 5rem 0 3rem;
+    padding: 7rem 0 3rem;
     background: transparent;
 }
 
@@ -90,6 +90,69 @@
     font-size: 0.9rem;
     line-height: 1.7;
 }
+
+.missionVision {
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.mvGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.mvCard {
+    padding: 4rem 3rem;
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-2xl);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: var(--glass-shadow);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mvCard:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: 0 25px 60px -12px rgba(99, 102, 241, 0.3);
+}
+
+.mvIcon {
+    width: 80px;
+    height: 80px;
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent);
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.mvTitle {
+    font-size: 1.75rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+    color: var(--primary);
+    letter-spacing: -0.02em;
+}
+
+.mvText {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
 
 .partnership {
     background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.08), var(--background));
@@ -242,6 +305,29 @@
 
     .subtitle {
         font-size: 0.9rem;
+    }
+
+    .mvGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .mvCard {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .mvIcon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1.5rem;
+    }
+
+    .mvTitle {
+        font-size: 1.5rem;
+    }
+
+    .mvText {
+        font-size: 0.95rem;
     }
 }
 

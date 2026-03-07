@@ -29,7 +29,7 @@ import { Paintbrush, Smartphone } from 'lucide-react'
 const TechTicker = () => {
     const techs = [
         { name: 'React', icon: <SiReact color="#61DAFB" /> },
-        { name: 'Next.js', icon: <SiNextdotjs color="#FFFFFF" /> },
+        { name: 'Next.js', icon: <SiNextdotjs color="#1A1B2E" /> },
         { name: 'Node.js', icon: <SiNodedotjs color="#339933" /> },
         { name: 'Python', icon: <SiPython color="#3776AB" /> },
         { name: 'TypeScript', icon: <SiTypescript color="#3178C6" /> },
@@ -49,7 +49,7 @@ const TechTicker = () => {
         { name: 'Blender', icon: <SiBlender color="#F5792A" /> },
         { name: 'Adobe XD', icon: <SiAdobexd color="#FF61F6" /> },
         { name: 'CI/CD', icon: <SiGithubactions color="#2088FF" /> },
-        { name: 'Vercel', icon: <SiVercel color="#FFFFFF" /> },
+        { name: 'Vercel', icon: <SiVercel color="#1A1B2E" /> },
         { name: 'Supabase', icon: <SiSupabase color="#3ECF8E" /> },
         { name: 'UI/UX Design', icon: <Paintbrush size={20} color="#A855F7" /> },
     ]
