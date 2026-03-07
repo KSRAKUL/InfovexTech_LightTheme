@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import SplashScreen from '@/components/SplashScreen'
 import NeuralBackground from '@/components/NeuralBackground'
+import BackToTop from '@/components/BackToTop'
 
 export const metadata = {
     title: 'Infovex Technologies | Next-Level Digital Solutions',
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
                 <SplashScreen />
                 <Navbar />
                 <main>{children}</main>
+                <BackToTop />
                 <Footer />
             </body>
         </html>
